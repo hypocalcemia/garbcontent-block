@@ -1,0 +1,12 @@
+{
+  "_note": "This is our YouTube filter list. If you want to add more keywords or channels/improvements, submit a pull request. (ISSUES ARE NOT FOR ADDING)",
+
+  "keywords": [
+    "hindi"
+  ],
+
+  "channels": [
+    "@DrShivrajSingh",
+    "@Dr.SumeraSkinClinic"
+  ]
+}
