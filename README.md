@@ -1,9 +1,12 @@
-# 🛡️ GarbContent-Block 
-### *Clean up the noise. Fix your YouTube discovery.*
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/9cccb2a1-545d-4728-b2f2-92beb538a286" width="100" height="100" />
+  <h1 align="left">GarbContent-Block</h1>
+  <h3>Clean up the noise. Fix your YouTube discovery.</h3>
+</p>
 
-[![Version](https://img.shields.io/badge/version-1.0.0--alpha-blue.svg)](https://github.com/your-username/garbcontent-block)
+[![Version](https://img.shields.io/badge/version-1.0.0--alpha-blue.svg)](https://github.com/hypocalcemia/garbcontent-block)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/your-username/garbcontent-block/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/hypocalcemia/garbcontent-block/graphs/commit-activity)
 
 **GarbContent-Block** is a simple, fast browser extension built to do one thing: filter out the junk. This isn't a complex ad-blocker—it's a tool to hide AI-generated "slop" and regional content that clutters your search results.
 
@@ -52,18 +55,26 @@ This project is moving fast. Here is how it’s scaled in just the first few day
 ## 🛠️ How to use it (Developer Alpha)
 Until the extension is live on the official stores, you can load it manually:
 
-1. **Download** or clone this repo.
-2. Open your browser and go to `chrome://extensions` (works on Brave/Edge/Chrome).
-3. Turn on **Developer Mode** (the toggle in the top right).
-4. Click **Load Unpacked** and select this folder.
-5. Refresh YouTube and watch the feed clean itself up.
+### Option 1: Download the Build (Recommended)
+The easiest way to get started is to download the latest optimized build.
+1. Download the `zip` file from the [**Latest Releases**](https://github.com/hypocalcemia/garbcontent-block/releases/latest).
+2. Unzip the folder to a permanent location on your drive.
+---
+### Option 2: Clone the Repo
+If you want to contribute to the code or the filter lists, you can clone the repository directly.
+
+> [!IMPORTANT]
+> Cloning the full repository includes the entire project history and all raw filter files, which takes up significantly more space than the release build.
+
+> [!TIP]
+> The actual extension files are located within the `GarbContent-Block` subfolder. Point your browser to that specific directory when using "Load Unpacked."
 ---
 
 ## 🤝 Help Me Clean This Up
 I can't find every bad channel alone. If you're tired of seeing a specific channel or a new type of "slop," here is how you can help:
 
 * **Add it yourself:** If you know GitHub, edit the JSON files in the `filters/` folder and send a Pull Request. I’ll merge them as fast as I can.
-* **Report a channel:** Just [open an issue](https://github.com/your-username/garbcontent-block/issues) and paste the `@handle`. Tell me if it's AI slop or regional content, and I'll add it to the main list.
+* **Report a channel:** Just [open an issue](https://github.com/hypocalcemia/garbcontent-block/issues) and paste the `@handle`. Tell me if it's AI slop or regional content, and I'll add it to the main list.
 * **New Ideas:** If you have an idea for a new filter (like blocking a different language or a specific niche), open an issue labeled `extra filters` and let's talk about it.
 
 ---
