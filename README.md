@@ -42,6 +42,7 @@ This project is moving fast. Here is how it’s scaled in just the first few day
 
 | Date | Progress | Total Channels Filtered |
 | :--- | :--- | :--- |
+| **Feb 08, 2026** | **Released Extension Alpha!** |
 | **Feb 08, 2026** | **Moved to Extension Alpha (Updated)** | **313** |
 | <s>Feb 08, 2026</s> | <s>Moved to Extension Alpha</s> | <s>163</s> |
 | Feb 07, 2026 | First major list update | 80+ |
