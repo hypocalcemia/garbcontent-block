@@ -1,5 +1,5 @@
 {
-  "_note": "This is our YouTube filter list. If you want to add more keywords or channels/improvements, submit a pull request. (ISSUES ARE NOT FOR ADDING)",
+  "_note": "YouTube filter list",
   "filter_name": "AI_Filter",
   "channels": [
     "@OsintGirl",
@@ -13,6 +13,21 @@
     "@therootdir",
     "@spiotech",
     "@farmhouseofai",
-    "@Hayze-z7j"
+    "@Hayze-z7j",
+    "@TechSkyAI",
+    "@NaturalHealthRemedies",
+    "@SkinSavvyDermatology",
+    "@drabdulavvalkhan",
+    "@RevitalizeRealm",
+    "@Dermatocare_com",
+    "@GSMedicalAcademy",
+    "@homoeopathyforcure",
+    "@PreparedNotScared2024",
+    "@DrPratibhaRathore897",
+    "@DrGPSingh",
+    "@PKHomeoCare",
+    "@dr.alpikahomoeopathy8429",
+    "@Dr.MolshriSoni",
+    "@drnehasaklani8555"
   ]
 }
