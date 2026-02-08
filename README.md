@@ -12,7 +12,7 @@
 ## 🛑 Why I built this
 YouTube’s search and discovery are currently being flooded by two big problems:
 
-1. **The Language Mismatch:** You search for a technical tutorial in English, but the results are packed with Hindi-language videos. If you don't speak the language, those results are just dead weight in your feed.
+1. **The Language Mismatch:** You search for a technical tutorial in English, but the results are packed with Indian-language videos (Also called hindi). If you don't speak the language, those results are just dead weight in your feed.
 2. **The AI-Slop Wave:** Millions of low-effort, AI-voiced videos are being mass-uploaded daily. They farm views but offer zero real help.
 
 ### The Stats
@@ -21,7 +21,18 @@ YouTube’s search and discovery are currently being flooded by two big problems
 * **Speed:** Since this runs as an extension, it scans the page as you scroll—zero lag, no waiting.
 
 ---
+## 📂 Filter Lists
+We categorize our filters to keep the blocking precise. You can find these in the `/filters` directory:
 
+### 🏛️ Official Lists (Verified by Maintainer)
+* **`AI_Filter.json`**: Targets known "slop" factories and mass-produced AI content.
+* **`Hindi_Filter.json`**: Targets regional Indian content to keep English discovery clean.
+
+### 🤝 Community & Extra Filters
+* **Community Submissions**: Experimental blocks or niche filters submitted by users. 
+* **Custom Rules**: Have a specific niche (like "Crypto-scams" or "Misleading Content") you want gone? Check the `extra filters` issues to see what we're building next.
+  
+---
 ## ✅ What it does
 * **Hides AI "Farms":** We target channels that mass-produce low-value, synthetic content.
 * **Hindi Content Filter:** A dedicated list to keep your English-speaking discovery focused on languages you actually understand.
