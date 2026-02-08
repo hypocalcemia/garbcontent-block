@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GarbContent-Block</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <style>
+        #toast {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-size: 14px;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s;
+            z-index: 10000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #444;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0b0b0b] text-white w-[400px] p-4 flex flex-col gap-4">
+
+    <!-- Header with Power Toggle -->
+    <div class="flex justify-between items-center">
+        <h2 class="font-bold uppercase text-sm">GarbContent-Block</h2>
+        <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2 cursor-pointer" id="power-toggle">
+                <i id="power-icon" class="fas fa-power-off text-zinc-400 text-xl"></i>
+                <span id="power-status" class="text-zinc-400 text-sm">Offline</span>
+            </div>
+            <!-- Log toggle (FontAwesome bug icon) -->
+            <div class="flex items-center gap-2 cursor-pointer" id="log-toggle" title="Toggle logging">
+                <i id="log-icon" class="fas fa-bug text-zinc-400 text-xl"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blocked counts -->
+    <div class="flex flex-col gap-2">
+        <span id="total-channels">Blocked Channels: 0</span>
+        <span id="total-videos">Blocked Videos: 0</span>
+    </div>
+
+    <!-- Default Filters -->
+    <div class="flex flex-col gap-2">
+        <label class="uppercase text-xs text-zinc-400">Default Filters</label>
+        <!-- ID fixed: matched to popup.js -> default-filters -->
+        <div id="default-filters" class="grid grid-cols-2 gap-2"></div>
+    </div>
+
+
+    <!-- Custom Filters -->
+    <div class="flex flex-col gap-1">
+        <label class="uppercase text-xs text-zinc-400">Custom Filters</label>
+        <div class="flex gap-2">
+            <!-- IDs fixed to match popup.js: custom-url and add-filter -->
+            <input type="text" id="custom-url" placeholder="Add custom filter URL..."
+                class="flex-grow p-2 rounded bg-[#121212] text-sm text-white border border-white/10">
+            <button id="add-filter" class="bg-[#3ea6ff] px-3 rounded text-sm font-bold hover:bg-[#3ea6ff]/80">Add
+                Filter</button>
+        </div>
+    </div>
+
+    <!-- Save Settings -->
+    <button id="save-btn" class="bg-[#3ea6ff] rounded p-2 font-bold hover:bg-[#3ea6ff]/80">Save Settings</button>
+
+    <!-- Footer -->
+    <span class="text-xs text-zinc-500">GarbContent-Block v1.0</span>
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "GarbContent-Block",
+  "version": "1.0",
+  "description": "Remove unwanted YouTube channels from your feed using predefined or custom filters.",
+  "permissions": ["storage", "activeTab", "scripting", "alarms"],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "host_permissions": [
+    "https://raw.githubusercontent.com/*"
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "fontawesome/webfonts/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "icons": {
+    "48": "icons/icon.png"
+  }
+}
